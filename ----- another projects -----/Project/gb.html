@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", sans-serif;
+                box-sizing: border-box;
+            }
+
+            .login-section {
+                /* overflow: hidden; */
+                max-width: 1660px;
+                height: 521px;
+                display: flex;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                background-color: #111318;
+            }
+
+            .login-section form {
+                max-width: 438px;
+                height: 440px;
+                position: relative;
+                top: 30px;
+                left: 30px;
+            }
+
+            .login-section form h1 {
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 100%;
+            }
+
+            .login-section form p {
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+                line-height: 100%;
+            }
+
+            .login-section form p span {
+                color: #FFB224;
+            }
+
+            .login-section form label {
+                color: #84818A;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 100%;
+            }
+
+            .login-section form input {
+                width: 100%;
+                padding: 20px;
+                color: #FFFFFF;
+                height: 70px;
+                border-radius: 3px;
+                background: #222428;
+                border: none;
+                outline: none;
+            }
+
+            .login-section form button {
+                width: 100%;
+                height: 71px;
+                border-radius: 3px;
+                background-color: #FFB224;
+                border: none;
+                outline: none;
+                margin-top: 25px;
+                cursor: pointer;
+                color: #FFFFFF;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 100%;
+            }
+
+            .login-section form .wrapper-input {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                gap: 15px;
+            }
+
+            .login-section form .wrapper-input #check {
+                width: 22px;
+                height: 22px;
+                background-color: #222428;
+            }
+
+            .login-section form .wrapper-input label span {
+                color: #FFB224;
+            }
+
+            .login-section .fdf {
+                position: relative;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 493px;
+                height: 493px;
+            }
+
+            /* .login-section */
+        </style>
+        <!-- Login page -->
+        <section class="login-section">
+            <form action="#">
+                <h1>Войти как партнер</h1>
+                <p>Нет аккаунта? <span>Создать аккаунт</span></p>
+                <label style="margin-bottom: 8px; display: block;" for="name">Имя</label>
+                <input style="margin-bottom: 12px;" id="name" type="text" placeholder="Введите ваше имя">
+                <label style="margin-bottom: 8px; display: block;" for="password">Пароль</label>
+                <input id="password" type="password" placeholder="Введите ваш пароль">
+                <button type="submit">Войти</button>
+                <div class="wrapper-input">
+                    <input id="check" type="checkbox">  
+                    <label for="check">Нажимая кнопку подтверждаю, что я ознакомлен и согласен с <span>условиями политики конфиденциальности</span></label>
+                </div>
+            </form>
+
+            <img class="fdf" src="sectionImages/Group.png" alt="no image">
+        </section>
+</body>
+
+</html>

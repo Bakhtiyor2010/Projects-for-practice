@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Modal</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .open {
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: none;
+            background-color: #0078D7; /* Bright blue */
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.9s ease;
+            box-shadow: 0 4px 10px rgba(0, 120, 215, 0.3);
+        }
+
+        .open:hover {
+            background-color: #005fa3;
+            transform: translateY(-5px);
+        }
+
+        .open:active {
+            background-color: #003f6b;
+            transform: translateY(0);
+        }
+
+        .wrapper-all {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            display: grid;
+            place-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s ease;
+        }
+
+        .wrapper-all.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-page {
+            max-width: 350px;
+            background-color: #ffffff;
+            padding: 25px;
+            margin: 0 15px;
+            border-radius: 15px;
+            box-shadow: none;
+            text-align: justify;
+            cursor: default;
+            transform: rotateX(70deg) translateY(-300px) scale(0);
+            transform-origin: top center;
+            transition: all 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .wrapper-all.show .modal-page {
+            transform: rotateX(0deg) translateY(-150px) scale(1);
+            box-shadow: 20px 20px 200px azure;
+        }
+
+        .modal-page h1 {
+            color: #0078D7;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .modal-page h2 {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .modal-page p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .close {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #e0e0e0;
+            color: #333;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .close:hover {
+            background-color: #ccc;
+            transform: translateY(-5px);
+        }
+
+        .close:active {
+            background-color: #aaa;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button id="open" class="open">Click to open modal page!</button>
+    </div>
+    
+    <div id="wrapper" class="wrapper-all">
+        <div class="modal-page" role="dialog" aria-modal="true">
+            <h1>Welcome!</h1>
+            <h2>Here's a modern and stylish modal window.</h2>
+            <p><i>This modal uses calm colors, soft shadows, and smooth transitions to create a professional and eye-friendly design. You can use it for messages, alerts, or pop-ups in your web projects.</i></p>
+            <button id="close" class="close">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.getElementById('open');
+        const closeBtn = document.getElementById('close');
+        const wrapper = document.getElementById('wrapper');
+
+        openBtn.addEventListener('click', () => {
+            wrapper.classList.add('show');
+            openBtn.style.display = 'none';
+            closeBtn.focus()
+        });
+
+        closeBtn.addEventListener('click', () => {
+            wrapper.classList.remove('show');
+            openBtn.style.display = 'block';
+        });
+
+        wrapper.addEventListener('click', (e) => {
+            if (e.target === wrapper) {
+                wrapper.classList.remove('show');
+                openBtn.style.display = 'block';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                wrapper.classList.remove('show');
+                openBtn.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

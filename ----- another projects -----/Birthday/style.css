@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    font-family: "Happy Monkey", system-ui;
+    background: linear-gradient(#a2d2ff, khaki);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-shadow: 0px 0px 1px black;
+}
+
+#bff-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 6px solid khaki;
+    margin: 5px auto 20px auto;
+}
+
+.date {
+    background: khaki;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gift-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gift-cover {
+    width: 500px;
+    height: 500px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url(./images/gift-cover.avif);
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    background-position: center;
+}
+
+#happy:hover {
+    background-image: url(./images/happy-gif.gif);
+}
+
+#hot:hover {
+    background-image: url(./images/hot.gif);
+}
+
+#genius:hover {
+    background-image: url(./images/genius.gif);
+}
+
+#badass:hover {
+    background-image: url(./images/badass.webp);
+}
+
+#cheers:hover {
+    background-image: url(./images/cheers.gif);
+}
+
+@media (width < 550px) {
+    .gift-cover,
+    #bff-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (width < 450px) {
+    .gift-cover,
+    #bff-img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (width < 350px) {
+    .gift-cover,
+    #bff-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (width < 250px) {
+    .gift-cover,
+    #bff-img {
+        width: 150px;
+        height: 150px;
+    }
+}

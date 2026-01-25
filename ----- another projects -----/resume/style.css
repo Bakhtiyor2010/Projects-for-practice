@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form fill */
+form {
+    height: 600px;
+    width: 610px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+form label {
+    font-size: 20px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input {
+    width: 400px;
+    padding: 10px;
+    height: 40px;
+    border: none;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+form textarea {
+    width: 400px;
+    background-color: lightgray;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+form button {
+    border: none;
+    font-size: 20px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s;
+}
+
+form button:hover {
+    background-color: gray;
+}
+
+/* submit page */
+
+
+/* .resume-page {
+    position: relative;
+    height: 600px;
+    width: 610px;
+}
+
+.resume-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.resume-page label {
+    font-size: 20px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.resume-page label:last-child {
+    border-bottom: none;
+}
+
+.resume-page label span {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.resume-page label span b {
+    color: red;
+    cursor: text;
+} */

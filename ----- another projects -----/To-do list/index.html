@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer="true"></script>
+    <script src="https://kit.fontawesome.com/b8a4e587e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- GET INFORMATION -->
+    <form action="#" onsubmit="showInfo(event)">
+        <div class="label-wrapper">
+            <label for="input1">
+                What's on your mind?
+                <textarea id="input1"></textarea>
+            </label>
+
+            <label for="input2">
+                Tell something about yourself:
+                <textarea id="input2"></textarea>
+            </label>
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- SHOW INFORMATION -->
+    <div id="show"></div>
+
+    <!-- NIGHT-LIGHT BUTTON -->
+     <button id="toggle" class="moon"><i class="fa-regular fa-moon"></i></button>
+     <button id="toggle" class="sun"><i class="fa-regular fa-sun"></i></button>
+</body>
+</html>

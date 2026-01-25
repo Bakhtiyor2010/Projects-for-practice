@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8a4e587e3.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="module" defer="true"></script>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="simple">
+        <div class="wrap">
+            <h1>Brooklyn Public Library</h1>
+
+            <div class="tags">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#coffe-shop">Coffee shop</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#library-cards">Library Card</a></li>
+                </ul>
+
+                <a href="#">
+                    <img id="profile" src="images/subtract.png" alt="subtract">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Responsive navbar section -->
+    <nav class="responsive">
+        <div class="wrap">
+            <h1>Brooklyn Public Library</h1>
+
+            <div class="tags">
+                <a href="#">
+                    <img id="profile" src="images/subtract.png" alt="subtract">
+                </a>
+
+                <button>
+                    <i class="fa-solid fa-bars" id="hamburger"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="list-wrapper" id="list-wrapper">
+            <ul id="lists">
+                <li><a href="#about">About</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#coffe-shop">Coffee shop</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#library-cards">Library Card</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <section class="welcome-section">
+        <div class="content">
+            <h1>Welcome to the Brooklyn Library</h1>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="line">
+            <div></div>
+        </div>
+        <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/image-1.png" alt="slide-1" loading="lazy">
+                <img src="images/image-2.png" alt="slide-2" loading="lazy">
+                <img src="images/image-3.png" alt="slide-3" loading="lazy">
+                <img src="images/image-4.png" alt="slide-4" loading="lazy">
+                <img src="images/image-5.png" alt="slide-5" loading="lazy">
+            </div>
+        </div>
+
+        <div class="dots">
+            <div class="dot active" onclick="moveToSlide(0)"></div>
+            <div class="dot" onclick="moveToSlide(1)"></div>
+            <div class="dot" onclick="moveToSlide(2)"></div>
+            <div class="dot three" onclick="moveToSlide(3)"></div>
+            <div class="dot four" onclick="moveToSlide(4)"></div>
+        </div>
+    </section>
+
+    <!-- Favorites section -->
+    <section class="favorites" id="favorites">
+        <h1>Favorites</h1>
+        <div class="line">
+            <div></div>
+        </div>
+        <p>Pick favorites of season</p>
+
+        <div class="seasons">
+            <label for="winter">
+                <input type="radio" checked name="season" id="winter">
+                <span>Winter</span>
+            </label>
+
+            <label for="spring">
+                <input type="radio" name="season" id="spring">
+                <span>Spring</span>
+            </label>
+
+            <label for="summer">
+                <input type="radio" name="season" id="summer">
+                <span>Summer</span>
+            </label>
+
+            <label for="autumn">
+                <input type="radio" name="season" id="autumn">
+                <span>Autumn</span>
+            </label>
+        </div>
+
+        <div class="book-collection"></div>
+    </section>
+
+    <!-- Coffee shop section -->
+    <section class="coffe-shop" id="coffe-shop">
+        <h1>Coffee shop</h1>
+        <div class="line">
+            <div></div>
+        </div>
+        <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+
+        <div class="menu">
+            <div class="menu-items coffee-tea">
+                <h1>Coffee & Tea</h1>
+            </div>
+
+            <div class="menu-items desserts-cakes">
+                <h1>Desserts & Cakes</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts section -->
+     <section id="contacts">
+        <h1>Our Contacts</h1>
+        <div class="line">
+            <div></div>
+        </div>
+
+        <div class="information">
+            <div class="tel-info">
+                <h1>For all Library inquiries:</h1>
+                <h2>Please call (617) 730-2370</h2>
+                <h2>For TTY service, please call (617) 730-2370</h2>
+                <h2>Putterham Library: (617) 730-2385</h2>
+                <h1>Senior Staff</h1>
+                <h2>Library Director: <b>Amanda Hirst</b></h2>
+            </div>
+
+            <div class="location-info">
+                <img src="images/map.png" alt="map">
+            </div>
+        </div>
+     </section>
+
+     <!-- Library Cards section -->
+      <section id="library-cards">
+        <h1 class="card-title">Digital Library Cards</h1>
+        <div class="line">
+            <div></div>
+        </div>
+
+        <div class="login">
+            <div class="form">
+                <h1>Find your Library card</h1>
+
+                <form action="#">
+                    <div class="input-field">
+                        <label>Brooklyn Public Library</label>
+                        <input type="text" placeholder="Reader's name">
+                        <input type="text" placeholder="Card number">    
+                    </div>
+                    
+                    <div class="btn">
+                        <button type="submit">Check the card</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="text">
+                <h1>Get a reader card</h1>
+                <p>You will be able to see a reader card after logging into account or you can register a new account</p>
+                
+                <div class="btns">
+                    <button>Sign Up</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+       <footer>
+            <div class="extra-info">
+                <div class="location">
+                    <p>286 Cadman Plaza, New York, <br> NY 11238, United States</p>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div class="hours">
+                    <p>Mon - Fri <br> 08:00 am - 07:00 pm</p>
+                    <p>Sat - Sun <br> 10:00 am - 06:00 pm</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="end">
+                <p>2025</p>
+                <p>The Rolling Scopes School</p>
+                <p>Username</p>
+            </div>
+       </footer>
+</body>
+</html>

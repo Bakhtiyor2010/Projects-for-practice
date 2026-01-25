@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.container .product .gallery {
+    flex-basis: 47%;
+    background: #241e20;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container .product .gallery img {
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.container .product .gallery .controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.container .product .gallery .controls .btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.container .product .gallery .controls .btn.active {
+    background: #553ff0;
+}
+
+.container .product .details {
+    flex-basis: 53%;
+    background: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.container .product .details h1 {
+    color: #333;
+    font-size: 35px;
+}
+
+.container .product .details h2 {
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .product .details h3 {
+    color: #00d874;
+    margin-bottom: 20px;
+}
+
+.container .product .details form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .product .details form .size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container .product .details form .size-select p {
+    width: 70px;
+}
+
+.container .product .details form .size-select input:checked + span {
+    color: blue;
+    font-weight: 600;
+}
+
+.container .product .details form .size-select input {
+    display: none;
+}
+
+.container .product .details form .size-select span {
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container .product .details form .color-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .product .details form .color-select p {
+    width: 75px;
+}
+
+.container .product .details form .color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.container .product .details form .color-select .color-1 {
+    background: red;
+}
+
+.container .product .details form .color-select .color-2 {
+    background: #00d874;
+}
+
+.container .product .details form .color-select .color-3 {
+    background: blue;
+}
+
+.container .product .details form .color-select .color-4 {
+    background: pink;
+}
+
+.container .product .details form .color-select input {
+    display: none;
+}
+
+.container .product .details form .color-select input:checked + span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.container .product .details form .quantity-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .product .details form .quantity-select p {
+    width: 75px;
+}
+
+.container .product .details form .quantity-select input {
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.container .product .details form button {
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}

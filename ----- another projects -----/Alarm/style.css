@@ -1,0 +1,78 @@
+:root {
+    --bg-color: #D3D3D3;
+    --brown-color: #502224;
+    --white-color: #FFFFFF;
+    --white-red-color: #E46363;
+    --red-color: #C04A4A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--brown-color);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.body {
+    width: 500px;
+    background: var(--white-red-color);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    /* height: 300px; */
+    justify-content: center;
+}
+
+.body .time {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 60px;
+    width: 100%;
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    background-color: var(--brown-color);
+}
+
+.body .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.body .btns input[type="time"] {
+    width: 300px;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.body .btns button {
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    height: 50px;
+    cursor: pointer;
+}

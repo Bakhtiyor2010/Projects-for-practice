@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Reader</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.9.179/build/pdf.js"></script>
+    <script>
+        pdfjsLib = window['pdfjs-dist/build/pdf'];
+    </script>
+    <script type="text/javascript" src="./js/script.js" defer="true"></script>
+</head>
+<body>
+    <main>
+        <h3>Open a PDF file</h3>
+        <canvas class="pdf-viewer hidden"></canvas>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <button id="openPDF">
+                    <span>Open</span>
+                    <i class="fas fa-folder-open"></i>
+                </button>
+
+                <input type="file" id="inputFile" hidden>
+            </li>
+
+            <li class="pagination">
+                <button id="previous">
+                    <i class="fas fa-arrow-alt-circle-left"></i>
+                </button>
+
+                <span id="current_page">0 of 0</span>
+
+                <button id="next">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </button>
+            </li>
+
+            <li>
+                <span id="zoomValue">150%</span>
+
+                <input type="range" id="zoom" name="cowbell" min="100" max="300" value="150" step="5" disabled>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

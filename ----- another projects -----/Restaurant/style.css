@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    color: saddlebrown;
+}
+
+/* CONTAINER */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container form input {
+    border: 1px solid saddlebrown;
+    outline: none;
+    text-transform: capitalize;
+    max-width: 210px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    color: saddlebrown;
+    background-color: #D98647;
+}
+
+.container form input::placeholder {
+    color: saddlebrown;
+    font-size: 18px;
+}
+
+.container form button {
+    width: 210px;
+    outline: none;
+    border-radius: 10px;
+    background-color: sienna;
+    font-size: 18px;
+    transition: all 0.1s;
+    border: 1px solid saddlebrown;
+    cursor: pointer;
+    text-align: center;
+    color: sandybrown;
+    height: 50px;
+    margin: 10px;
+}
+
+.container form button:hover {
+    background-color: saddlebrown;
+}
+
+/* CARDS */
+
+#card {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#card .card-item {
+    width: 400px;
+    background-color: sandybrown;
+    color: saddlebrown;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+}
+
+#card .card-item:hover {
+    transform: scale(1.06);
+}
+
+#card .card-item h1 {
+    text-transform: capitalize;
+    border-bottom: 5px solid saddlebrown;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#card .card-item h2 {
+    text-align: right;
+    font-weight: 300;
+}
+
+#card .card-item button {
+    width: 90px;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: sienna;
+    font-size: 18px;
+    color: sandybrown;
+    border: none;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+    height: 40px;
+}
+
+#card .card-item button:hover {
+    background-color: saddlebrown;
+}
+
+#card .card-item .btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+.selected-items {
+    display: flex;
+    justify-content: center;
+}
+
+.selected-items #selectitems {
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+    margin: 10px;
+    background-color: sandybrown;
+    min-width: 400px;
+    border: 3px solid saddlebrown;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.selected-items #selectitems h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.selected-items #selectitems h2 {
+    font-size: 20px;
+}

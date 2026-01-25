@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <input id="up" class="up" type="text" disabled>
+        <div class="number_calculator">
+            <button onclick="handleCalculation('')" class="num" style="color: red;">
+                <b>AC</b>
+            </button>
+            <button onclick="squareRoot()" class="num">sqrt</button>
+            <button onclick="deleteCalculation()" class="num">Delete</button>
+            <button onclick="handleCalculation('/')" class="num">/</button>
+            <button onclick="handleCalculation('7')" class="num">7</button>
+            <button onclick="handleCalculation('8')" class="num">8</button>
+            <button onclick="handleCalculation('9')" class="num">9</button>
+            <button onclick="handleCalculation('*')" class="num">*</button>
+            <button onclick="handleCalculation('4')" class="num">4</button>
+            <button onclick="handleCalculation('5')" class="num">5</button>
+            <button onclick="handleCalculation('6')" class="num">6</button>
+            <button onclick="handleCalculation('-')" class="num">-</button>
+            <button onclick="handleCalculation('1')" class="num">1</button>
+            <button onclick="handleCalculation('2')" class="num">2</button>
+            <button onclick="handleCalculation('3')" class="num">3</button>
+            <button onclick="handleCalculation('+')" class="num">+</button>
+            <button onclick="handleCalculation('**')" class="num">**</button>
+            <button onclick="handleCalculation('0')" class="num">0</button>
+            <button onclick="calculate()" class="num">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

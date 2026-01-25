@@ -1,0 +1,39 @@
+    .box {
+        background: #1f1f1f;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .box .up {
+        border-radius: 10px;
+        background-color: #2f2f2f;
+        width: 100%;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 60px;
+        height: 100px;
+    }
+
+    .box .number_calculator {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .box .number_calculator .num {
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        width: 100px;
+        font-size: 30px;
+        height: 100px;
+        margin: 5px;
+    }
